@@ -110,6 +110,8 @@ gradleTestKitSupport {
 dependencies {
   implementation(platform(libs.okio.bom))
 
+  "commonTestCompileOnly"(libs.kotlin.stdlib.core)
+
   api(libs.javax.inject)
   api(libs.moshi.core)
   api(libs.moshix.sealed.runtime)

@@ -20,6 +20,7 @@ dependencies {
   api(libs.guava) {
     because("Graphs")
   }
+  compileOnly(libs.kotlin.stdlib.core)
 
   testImplementation(platform(libs.junit.bom))
   testImplementation(libs.junit.api)
